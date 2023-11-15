@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Glagolitic&family=Vina+Sans&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 40px;
+    height: 40px;
+}
+
+body {
+    font-family: 'Noto Sans Glagolitic', sans-serif;
+}
+
+.apresentacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #dcf4ce;
+    height: 100vh;
+    width: 100%;
+    border-bottom-right-radius: 35%;
+    border-bottom-left-radius: 35%;
+}
+
+.apresentacao_logo {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    margin-left: 40px;
+    font-size: 35px;
+    color: #347571;
+    margin-bottom: 25px;
+    align-self: flex-start;
+    font-family: 'Vina Sans', sans-serif;
+}
+
+.apresentacao_imagem_texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.container_button {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.apresentacao_botao {
+    margin-top: 80px;
+    width: 60px;
+    height: auto;
+}
+
+.apresentacao_texto {
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+    color: #347571;
+    font-weight: 800;
+    width: 600px;
+    margin: 5px;
+    padding: 0 50px;
+    align-items: center;
+    text-align: center;
+}
+
+.apresentacao_button {
+    border: none;
+    background-color: #5ec57e;
+    width: 200px;
+    height: 40px;
+    border-radius: 50px;
+    margin: 60px 0 0px 0px;
+    font-family: 'Noto Sans Glagolitic', sans-serif;
+    color: white;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.button_apresentacao_botao {
+    border: none;
+    height: 10px;
+    cursor: pointer;
+}
+
+.apresentacao_imagem {
+    width: auto;
+    height: 400px;
+}
+
+.container_flashcards {
+    display: grid;
+    grid-template-columns: 500px 500px;
+    gap: 30px;
+    grid-template-rows: 600px;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.container_flashcards_texto {
+    font-size: 45px;
+    font-weight: 900;
+    margin: 20px 0;
+    padding: 100px 50px;
+    width: 800px;
+    align-items: center;
+    color: #347571;
+    text-align: center;
+    width: 900px;
+}
+
+.container_flashcard1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #dcf4ce;
+    font-size: 35px;
+    font-weight: 800;
+    justify-content: center;
+    gap: 80px;
+}
+
+.imagem_flashcard {
+    width: 150px;
+    height: 150px;
+    display: flex;
+}
+
+.flashcard_texto {
+    color: #347571;
+    text-align: center;
+    margin: 0 30px;
+}
+
+.categorias {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 7px;
+
+}
+
+.container_categorias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    font-size: 30px;
+    width: 200px;
+    height: 200px;
+    background-color: #ecf8e5;
+}
+
+.categorias_frutas {
+    width: auto;
+    height: 70px;
+}
+
+.categorias_cor {
+    background-color: #dcf4ce;
+}
+
+.categorias_botao_mais {
+    width: auto;
+    height: 30px;
+    cursor: pointer;
+}
+
+.rodape {
+    background-color: #347571;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.apresentacao_button:hover {
+    background-color: white;
+    color: #347571;
+}
+
+@media only screen and (max-width:643px) {
+    .apresentacao_imagem_texto {
+        flex-direction: column;
+    }
+
+    .apresentacao_imagem {
+        display: none;
+    }
+
+    .container_flashcards {
+        grid-template-columns: 400px;
+        grid-template-rows: 500px 500px;
+    }
+
+    .container_flashcards_texto {
+        width: 80%;
+        font-size: 20px;
+        padding: 0;
+    }
+
+    .container_flashcards_texto_posicao {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .categorias {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 7px;
+    }
+
+    .apresentacao_texto p {
+        margin-top: 30px;
+        font-size: 20px;
+        width: 400px;
+    }
+
+    .container_categorias {
+        width: 150px;
+    }
+
+    .apresentacao_texto {
+        padding: 0;
+        width: 500px;
+    }
+
+    .apresentacao_botao {
+        margin: 0;
+    }
+
+    .container {
+        margin-top: 80px;
+    }
+
+    .apresentacao {
+        height: 500px;
+        border-bottom-right-radius: 20%;
+        border-bottom-left-radius: 20%;
+    }
+
+    .apresentacao_logo {
+        margin: 0;
+        padding: 0;
+    }
+
+    .apresentacao_logo h1 {
+        font-size: 30px;
+        margin: 10px 0 0 38px;
+
+
+    }
+
+    .flashcard_texto {
+        font-size: 20px;
+    }
+
+
+}
+
+@media only screen and (max-width:480px) {
+
+
+    .apresentacao_texto {
+        font-size: 20px;
+        margin: 30px;
+    }
+
+    .container_button {
+        flex-direction: column;
+        gap: 5px;
+        margin-top: 30px;
+    }
+
+    .apresentacao_button {
+        margin-top: 20px;
+    }
+
+    .container_categorias {
+        width: 110px;
+        height: 140px;
+        font-size: 16px;
+    }
+
+    .container_categorias img {
+        height: 30px;
+        width: auto;
+    }
+
+    .apresentacao_texto {
+        width: auto;
+    }
+
+    .container_flashcards {
+        grid-template-columns: 300px;
+        grid-template-rows: 400px 400px;
+    }
+
+    .container_flashcard1 img {
+        height: 80px;
+        width: auto;
+    }
+
+
+    .apresentacao_texto {
+        margin: 0;
+    }
+
+    .apresentacao_texto p {
+        width: auto;
+    }
+
+    .apresentacao {
+        height: 80%;
+        width: auto;
+    }
+
+}
